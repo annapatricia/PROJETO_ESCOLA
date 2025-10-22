@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário do Paciente</title>
+    <style>
+        body {
+            background-color: #f2f2f2;   /* cor de fundo suave */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Quadrado (caixa do formulário) */
+        .formulario {
+            background-color: white;     /* fundo branco do quadrado */
+            width: 300px;                /* largura fixa */
+            margin: 80px auto;           /* centraliza na tela */
+            padding: 20px;               /* espaço interno */
+            border-radius: 10px;         /* cantos arredondados */
+            box-shadow: 0 0 10px gray;   /* sombra */
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;              /* cada label em linha separada */
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;                 /* ocupa toda a largura da caixa */
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;   /* muda a cor quando o mouse passa por cima */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formulario">
+        <h2>Cadastro do Paciente</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
